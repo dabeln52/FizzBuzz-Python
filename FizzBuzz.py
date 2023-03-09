@@ -1,9 +1,9 @@
 for num in range(1,101):
-    output = ''
-if num % 3 == 0:
-    output += "Fizz"
-if num % 5 == 0:
-    output += "Buzz"
-if not output:
-    output = num
-print(output)
+    if num % 3 == 0 and num % 5 == 0:
+        print( num, "FizzBuzz")
+    elif num % 3 == 0:
+        print(num , "Fizz")
+    elif num % 5 == 0:
+        print(num ,"Buzz")
+    else:
+        print(num)
